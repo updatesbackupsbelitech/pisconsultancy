@@ -4,8 +4,9 @@ import PageHero from "@/components/PageHero";
 import SectionWrapper from "@/components/SectionWrapper";
 import ContactForm from "@/components/ContactForm";
 import SEO from "@/components/SEO";
-import aboutHero from "@/assets/about-hero.jpg";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+
+const aboutHero = "/placeholder.svg";
 
 const Contact = () => {
   return (

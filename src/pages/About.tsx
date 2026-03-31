@@ -4,9 +4,10 @@ import PageHero from "@/components/PageHero";
 import SectionWrapper from "@/components/SectionWrapper";
 import CTABanner from "@/components/CTABanner";
 import SEO from "@/components/SEO";
-import aboutHero from "@/assets/about-hero.jpg";
-import aboutStory from "@/assets/about-story.jpg";
 import { Shield, Eye, Target, Lightbulb, Users, CheckCircle2 } from "lucide-react";
+
+const aboutHero = "/placeholder.svg";
+const aboutStory = "/placeholder.svg";
 
 const coreValues = [
   { icon: Shield, title: "Integrity", desc: "We operate with honesty, transparency, and the highest ethical standards." },

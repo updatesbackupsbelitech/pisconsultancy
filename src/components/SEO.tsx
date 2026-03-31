@@ -25,18 +25,22 @@ const SEO = ({
     // Set document title
     document.title = `${title} | PIS Consultancy`;
 
+    const setMetaByName = (name: string, content: string) => {
+      let meta = document.querySelector(`meta[name="${name}"]`);
+      if (!meta) {
+        meta = document.createElement("meta");
+        meta.setAttribute("name", name);
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute("content", content);
+    };
+
     // Set meta description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", description);
-    }
+    setMetaByName("description", description);
 
     // Set meta keywords
     if (keywords) {
-      const metaKeywords = document.querySelector('meta[name="keywords"]');
-      if (metaKeywords) {
-        metaKeywords.setAttribute("content", keywords);
-      }
+      setMetaByName("keywords", keywords);
     }
 
     // Set canonical URL
@@ -68,13 +72,20 @@ const SEO = ({
     }
     setMetaTag("og:type", ogType);
 
+    // Set Twitter card tags (keep consistent with OG)
+    setMetaByName("twitter:title", ogTitle || title);
+    setMetaByName("twitter:description", ogDescription || description);
+    if (ogImage) {
+      setMetaByName("twitter:image", ogImage);
+    }
+
     // Set JSON-LD structured data
     const scriptLD = {
       "@context": "https://schema.org",
       "@type": "Organization",
       name: "PIS Consultancy",
       url: "https://pisconsultancy.com",
-      logo: "https://pisconsultancy.com/logo.png",
+      logo: "https://pisconsultancy.com/placeholder.svg",
       description: "Professional consulting services - Audit, Tax, Accounting, Advisory",
       address: {
         "@type": "PostalAddress",

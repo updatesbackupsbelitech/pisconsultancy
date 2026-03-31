@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import pisLogo from "@/assets/Pis-3.jpg.png";
+
+const pisLogo = "/placeholder.svg";
 
 const navLinks = [
   { label: "Home", path: "/" },

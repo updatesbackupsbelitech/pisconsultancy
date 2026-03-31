@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import SectionWrapper from "@/components/SectionWrapper";
 import CTABanner from "@/components/CTABanner";
-import servicesHero from "@/assets/services-hero.jpg";
+import SEO from "@/components/SEO";
 import {
   FileText,
   BarChart3,
@@ -18,6 +18,8 @@ import {
   Database,
   ScanLine,
 } from "lucide-react";
+
+const servicesHero = "/placeholder.svg";
 
 const services = [
   {
@@ -147,6 +149,12 @@ const services = [
 const Services = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Services"
+        description="Explore PIS Consultancy services including audit & assurance, tax advisory, outsourced accounting, bookkeeping, data analytics, cybersecurity, and business advisory in Ghana."
+        keywords="services, audit, tax advisory, accounting, bookkeeping, data analytics, cybersecurity, business advisory, Ghana"
+        canonical="https://pisconsultancy.com/services"
+      />
       <Navbar />
       <PageHero
         title="Our Services"

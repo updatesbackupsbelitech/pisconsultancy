@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-import pisLogo from "@/assets/Pis-3.jpg.png";
+
+const pisLogo = "/placeholder.svg";
 
 const Footer = () => {
   return (

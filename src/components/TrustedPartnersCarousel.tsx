@@ -7,6 +7,8 @@ interface PartnerLogo {
   src: string;
 }
 
+const fallbackPartnerLogoSrc = "/placeholder.svg";
+
 const TrustedPartnersCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoScroll, setAutoScroll] = useState(true);
@@ -73,6 +75,9 @@ const TrustedPartnersCarousel = () => {
                   src={partner.src}
                   alt={partner.name}
                   className="max-w-full max-h-full object-contain"
+                  onError={(e) => {
+                    e.currentTarget.src = fallbackPartnerLogoSrc;
+                  }}
                 />
               </div>
             ))}

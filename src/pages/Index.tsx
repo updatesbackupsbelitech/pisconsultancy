@@ -30,12 +30,13 @@ import ProjectCard from "@/components/ProjectCard";
 import CTABanner from "@/components/CTABanner";
 import TrustedPartnersCarousel from "@/components/TrustedPartnersCarousel";
 import SEO from "@/components/SEO";
-import heroBg from "@/assets/image.png";
-import Kn from "@/assets/app-microfinance.jpg";
-import Golden from "@/assets/app-school.jpg";
-import Big from "@/assets/app-pos.jpg";
-import aboutStory from "@/assets/about-story.jpg";
-import pisTech from "@/assets/pis-tech.jpg.jpeg";
+
+const heroBg = "/placeholder.svg";
+const Kn = "/placeholder.svg";
+const Golden = "/placeholder.svg";
+const Big = "/placeholder.svg";
+const aboutStory = "/placeholder.svg";
+const pisTech = "/placeholder.svg";
 
 
 const services = [

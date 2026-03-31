@@ -5,10 +5,12 @@ import PageHero from "@/components/PageHero";
 import SectionWrapper from "@/components/SectionWrapper";
 import ProjectCard from "@/components/ProjectCard";
 import CTABanner from "@/components/CTABanner";
-import projectsHero from "@/assets/projects-hero.jpg";
-import Kn from "@/assets/app-microfinance.jpg";
-import Golden from "@/assets/app-school.jpg";
-import Big from "@/assets/app-pos.jpg";
+import SEO from "@/components/SEO";
+
+const projectsHero = "/placeholder.svg";
+const Kn = "/placeholder.svg";
+const Golden = "/placeholder.svg";
+const Big = "/placeholder.svg";
 
 const allProjects = [
   { title: "KN Nyamekye Enterprise", summary: "A comprehensive microfinance management platform for loan processing, client management, and financial reporting.", category: "Microfinance", image: Kn },
@@ -24,6 +26,12 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Projects"
+        description="Browse selected projects and engagements delivered by PIS Consultancy and PiS Technologies across finance, education, and retail solutions."
+        keywords="projects, case studies, software solutions, consulting, Ghana"
+        canonical="https://pisconsultancy.com/projects"
+      />
       <Navbar />
       <PageHero
         title="Our Projects"
