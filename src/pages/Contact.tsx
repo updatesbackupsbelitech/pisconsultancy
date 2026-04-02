@@ -21,7 +21,7 @@ const Contact = () => {
       <PageHero
         title="Contact Us"
         subtitle="We'd love to hear from you. Let's discuss how we can support your business goals."
-        image={aboutHero}
+        image="/images/about-hero.jpg"
       />
 
       <SectionWrapper>

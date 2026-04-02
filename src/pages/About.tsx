@@ -38,7 +38,7 @@ const About = () => {
       <PageHero
         title="About PIS Consultancy"
         subtitle="A values-led firm with a culture and ethos that is at the heart of everything we do."
-        image={aboutHero}
+        image="/images/about-hero.jpg"
       />
 
       {/* Company Story */}
@@ -58,7 +58,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <img src={aboutStory} alt="PIS Team collaboration" className="rounded-lg shadow-lg w-full" />
+            <img src="/images/about-story.jpg" alt="PIS Team collaboration" className="rounded-lg shadow-lg w-full" />
           </div>
         </div>
       </SectionWrapper>
